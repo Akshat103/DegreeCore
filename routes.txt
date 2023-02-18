@@ -1,0 +1,85 @@
+user signup
+/api/signup
+{
+    "name":"Akshat Tamrakar",
+    "email":"akshattamrakar103@gmail.com",
+    "password":"12345678",
+    "cPassword":"12345678",
+    "institution":"Medicaps University",
+    "institutionCity":"Indore",
+    "year":"II"
+}
+
+user signin
+/api/signin
+{
+    "email":"akshattamrakar103@gmail.com",
+    "password":"12345678"
+}
+
+get single user
+/api/user/single-user
+{
+    "uId":"63e37afb839a4c93645b6f21"
+}
+
+edit user
+/api/user/edit-user
+{
+    "uId":"63e37afb839a4c93645b6f21",
+    "name": "Akshat Paigwar",
+    "email": "tamrakarakshat092@gmail.com",
+    "institution":"Christ Church Convent",
+    "institutionCity":"Gadarwara",
+    "year":"III"
+}
+
+change password
+/api/user/change-password
+{
+    "uId":"63e37afb839a4c93645b6f21",
+    "oldPassword": "12345678",
+    "newPassword": "12345678"
+}
+
+get all products
+/api/product/all-product
+
+add product
+/api/product/add-product
+pImages: allImages,
+          pName,
+          pDescription,
+          pPrice,
+          sName,
+          institution,
+          institutionCity,
+          year,
+          sId
+
+get admin products
+/api/product/admin-product
+{
+    "uId":"63e37afb839a4c93645b6f21"
+}
+
+edit product
+/api/product/edit-product
+{
+    "pId":"63e3d4304f8442329b7dc38a",
+    "pName":"BookRenamed",
+    "pDescription":"Test Book Edit",
+    "pPrice":"420",
+    "institution":"Christ Church Convent",
+    "institutionCity":"Gadarwara",
+    "year":"III"
+}
+
+delete product
+/api/product/delete-product
+{
+    "pId":"63e3d4304f8442329b7dc38a"
+}
+
+
+
